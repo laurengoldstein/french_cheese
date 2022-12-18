@@ -9,6 +9,12 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var testAPIRouter = require("./routes/testAPI");
 
+// const { Sequelize } = require("sequelize");
+// const sequelize = new Sequelize("database", "username", "password", {
+//   host: "localhost",
+//   dialect: "postgres",
+// });
+
 var app = express();
 
 // view engine setup
