@@ -16,9 +16,17 @@ module.exports = {
         type: Sequelize.STRING,
         field: "milk_type",
       },
-      tastingNotes: {
+      description: {
+        type: Sequelize.TEXT,
+        field: "description",
+      },
+      overallRating: {
+        type: Sequelize.INTEGER,
+        field: "overall_rating",
+      },
+      image: {
         type: Sequelize.STRING,
-        field: "tasting_notes",
+        field: "image",
       },
       createdAt: {
         allowNull: false,
