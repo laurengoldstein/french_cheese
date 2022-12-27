@@ -1,24 +1,24 @@
 {
   "development": {
-    "username": "laurengoldstein",
+    "username": "postgres",
     "password": null,
-    "database": "french_cheese_development",
+    "database": "terroir_development",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "migrationStorageTableName": "sequelize_meta"
   },
   "test": {
-    "username": "laurengoldstein",
+    "username": "postgres",
     "password": null,
-    "database": "french_cheese_test",
+    "database": "terroir_test",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "migrationStorageTableName": "sequelize_meta"
   },
   "production": {
-    "username": "laurengoldstein",
+    "username": "postgres",
     "password": null,
-    "database": "french_cheese_production",
+    "database": "terroir_production",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "migrationStorageTableName": "sequelize_meta"
