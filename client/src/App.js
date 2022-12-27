@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 // import logo from "./logo.svg";
 import "./App.css";
 import HomeView from "./views/Home.js";
+import LoginRegisterView from "./views/LoginRegister.js";
 import NavBar from "./components/NavBar";
 
 class App extends Component {
@@ -28,6 +29,7 @@ class App extends Component {
         <div className="container">
           <Routes>
             <Route path="/" element={<HomeView />} />
+            <Route path="/login" element={<LoginRegisterView />} />
           </Routes>
         </div>
       </div>
