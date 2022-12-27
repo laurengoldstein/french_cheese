@@ -1,6 +1,9 @@
 import React, { Component } from "react";
+import { Route, Routes } from "react-router-dom";
 // import logo from "./logo.svg";
 import "./App.css";
+import HomeView from "./views/Home.js";
+import NavBar from "./components/NavBar";
 
 class App extends Component {
   constructor(props) {
@@ -21,11 +24,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          <h1 className="App-title">Welcome to Terroir</h1>
-        </header>
-        <p className="App-intro">{this.state.apiResponse}</p>
+        <NavBar />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<HomeView />} />
+          </Routes>
+        </div>
       </div>
     );
   }
