@@ -1,4 +1,5 @@
 "use strict";
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
@@ -10,10 +11,12 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       name: {
+        allowNull: false,
         type: Sequelize.STRING,
       },
       milkType: {
-        type: Sequelize.STRING,
+        allowNull: false,
+        type: Sequelize.ARRAY(Sequelize.STRING),
         field: "milk_type",
       },
       description: {
