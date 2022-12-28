@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../terroir-logo.svg";
 // import "./Home.css";
 
 function HomeView(props) {
   return (
     <div className="HomeView">
+      <img src={logo} />
       <h1>Terroir</h1>
       <h2>Discover the regional cheeses of France.</h2>
       <h3>

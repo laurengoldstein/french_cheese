@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Routes } from "react-router-dom";
-// import logo from "./logo.svg";
+
 import "./App.css";
 import HomeView from "./views/Home.js";
 import LoginRegisterView from "./views/LoginRegister.js";

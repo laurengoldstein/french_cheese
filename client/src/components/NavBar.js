@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import logo from "../TerroirLogo.png";
 // import "./NavBar.scss";
 
 function NavBar(props) {
@@ -7,7 +8,7 @@ function NavBar(props) {
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
-          Terroir
+          <img src={logo} width="80" height="80" alt="Terroir Logo" />
         </NavLink>
         <button
           className="navbar-toggler"
