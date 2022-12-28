@@ -10,8 +10,10 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Cheese.belongsTo(Location);
+      Cheese.belongsToMany(User, { through: "CheeseUsers" });
     }
   }
+  Cheese.sync({ alter: true });
   Cheese.init(
     {
       name: DataTypes.STRING,
