@@ -29,7 +29,7 @@ function NavBar(props) {
                 aria-current="page"
                 to="/cheeses"
               >
-                Search Cheeses
+                Cheeses
               </NavLink>
             </li>
             <li className="nav-item">
