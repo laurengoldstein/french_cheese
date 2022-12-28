@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../terroir-logo.svg";
+import logo from "../TerroirLogoNoBackground.svg";
 // import "./Home.css";
 
 function HomeView(props) {
