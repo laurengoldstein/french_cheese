@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../TerroirLogoNoBackground.svg";
-// import "./NavBar.scss";
+// import "./NavBar.css";
 
 function NavBar(props) {
   return (
