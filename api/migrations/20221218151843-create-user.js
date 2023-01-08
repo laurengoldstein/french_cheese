@@ -12,7 +12,7 @@ module.exports = {
       userName: {
         allowNull: false,
         type: Sequelize.STRING,
-        field: "user_name",
+        field: "username",
       },
       image: {
         type: Sequelize.STRING,

@@ -25,7 +25,7 @@ function HomeView(props) {
         </li>
       </ul>
 
-      <h4>Login or register to unlock all the features of Terroir.</h4>
+      <h4>Login or register to unlock all of Terroir's features.</h4>
       <Link className="btn btn-outline-success" type="button" to="/login">
         Login/Register
       </Link>

@@ -5,7 +5,7 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     return queryInterface.bulkInsert("users", [
       {
-        user_name: "mouse",
+        username: "mouse",
         email: "mouse@example.com",
         image:
           "https://effectivewildlifesolutions.com/wp-content/uploads/2017/01/EWS_Field_Mouse.jpeg",
@@ -14,7 +14,7 @@ module.exports = {
         updated_at: new Date(),
       },
       {
-        user_name: "homer",
+        username: "homer",
         email: "homersimpson@example.com",
         image: "https://pngimg.com/uploads/simpsons/simpsons_PNG8.png",
         about: "My favorite cheeses pair well with Duff beer.",
@@ -22,7 +22,7 @@ module.exports = {
         updated_at: new Date(),
       },
       {
-        user_name: "madonna",
+        username: "madonna",
         email: "madonna@example.com",
         image:
           "http://images1.fanpop.com/images/photos/1400000/Madonna-madonna-1419390-2048-2560.jpg",
