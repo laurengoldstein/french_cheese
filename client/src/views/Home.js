@@ -30,7 +30,18 @@ function HomeView(props) {
       <Link className="btn btn-outline-success" type="button" to="/login">
         Login/Register
       </Link>
-      <MapContainer id="map" style={{ height: "800px" }}></MapContainer>
+      <MapContainer
+        id="map"
+        center={[47, 2.2137]}
+        zoom={6}
+        scrollWheelZoom={false}
+        // style={{ height: "800px" }}
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+      </MapContainer>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Routes } from "react-router-dom";
 
-import "./App.css";
+import "./App.scss";
 import HomeView from "./views/Home.js";
 import LoginRegisterView from "./views/LoginRegister.js";
 import CheeseSearchView from "./views/CheeseSearch.js";

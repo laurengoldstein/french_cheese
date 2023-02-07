@@ -1,0 +1,11 @@
+@use "./common" as *;
+
+/* .App {
+  text-align: center;
+} */
+
+#map {
+  height: 600px;
+  border: 5px solid;
+  border-color: $yellow;
+}
