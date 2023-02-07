@@ -11,9 +11,16 @@
 
   h2,
   h3,
-  h4,
+  h4 {
+    font-family: $body-text;
+  }
+
   li {
     font-family: $body-text;
+    font-size: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+    list-style-type: none;
   }
 
   .nav-link {
@@ -27,13 +34,15 @@
   .btn:hover {
     background-color: $yellow;
   }
+
+  .row {
+    margin-bottom: 2em;
+  }
 }
 
 #homeLogo {
   max-height: 50%;
   max-width: 50%;
-  aspect-ratio: 1 / 1;
-  align: center;
 }
 
 #map {

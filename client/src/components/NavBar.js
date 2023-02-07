@@ -13,7 +13,7 @@ function NavBar(props) {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
+            <li className="nav-item pt-0">
               <NavLink
                 className="nav-link active"
                 aria-current="page"
@@ -22,7 +22,7 @@ function NavBar(props) {
                 Cheeses
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item pt-0">
               <NavLink className="nav-link" to="/profile/:id">
                 Profile
               </NavLink>
