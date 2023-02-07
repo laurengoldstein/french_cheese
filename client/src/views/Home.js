@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../TerroirLogoNoBackground.svg";
+import { MapContainer, TileLayer, Marker, Popur } from "react-leaflet";
 // import "./Home.css";
 
 function HomeView(props) {
@@ -29,6 +30,7 @@ function HomeView(props) {
       <Link className="btn btn-outline-success" type="button" to="/login">
         Login/Register
       </Link>
+      <MapContainer id="map" style={{ height: "800px" }}></MapContainer>
     </div>
   );
 }
