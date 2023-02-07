@@ -19,24 +19,33 @@
     font-family: $body-text;
     font-size: 1em;
     padding-top: 1em;
-    padding-right: 1em;
     list-style-type: none;
   }
 
   .nav-link {
     color: $brown;
     font-size: 1.25em;
+    margin-right: 1em;
+  }
+
+  .nav-link:hover {
+    font-weight: bold;
+  }
+
+  .navbar-toggler {
+    color: $brown;
   }
 
   .btn {
     @include button;
   }
+
   .btn:hover {
     background-color: $yellow;
   }
 
   .row {
-    margin-bottom: 2em;
+    padding-bottom: 2em;
   }
 }
 

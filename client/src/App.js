@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar />
-        <div className="container">
+        <div className="container-fluid">
           <Routes>
             <Route path="/" element={<HomeView />} />
             <Route path="/login" element={<LoginRegisterView />} />

@@ -12,7 +12,7 @@ function HomeView(props) {
         <h1>Terroir</h1>
         <h2>Discover the regional cheeses of France.</h2>
       </div>
-      <div className="row py-5">
+      <div className="row py-5 bg-light">
         <h2>The Terroir app is designed with cheese-lovers in mind. </h2>
         <ul>
           <li>
