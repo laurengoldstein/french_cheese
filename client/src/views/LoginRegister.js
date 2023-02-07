@@ -33,7 +33,7 @@ function LoginRegisterView(props) {
                 id="inputPasswordLogin"
               />
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-outline">
               Submit
             </button>
           </form>
@@ -77,7 +77,7 @@ function LoginRegisterView(props) {
               />
             </div>
 
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-outline">
               Submit
             </button>
           </form>

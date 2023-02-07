@@ -32,3 +32,14 @@ $sm-space: 10px;
 $yellow: #f9ce43;
 $orange: #db832c;
 $brown: #a25c1c;
+
+$title-text: "Alegreya Sans SC", sans-serif;
+$body-text: "Lato", sans-serif;
+
+@mixin button {
+  font-family: $title-text;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: $brown;
+  border-color: $orange;
+}

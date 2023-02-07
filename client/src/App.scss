@@ -1,8 +1,40 @@
 @use "./common" as *;
 
-/* .App {
+.App {
   text-align: center;
-} */
+
+  h1 {
+    font-family: $title-text;
+    font-weight: bolder;
+    font-size: 5em;
+  }
+
+  h2,
+  h3,
+  h4,
+  li {
+    font-family: $body-text;
+  }
+
+  .nav-link {
+    color: $brown;
+    font-size: 1.25em;
+  }
+
+  .btn {
+    @include button;
+  }
+  .btn:hover {
+    background-color: $yellow;
+  }
+}
+
+#homeLogo {
+  max-height: 50%;
+  max-width: 50%;
+  aspect-ratio: 1 / 1;
+  align: center;
+}
 
 #map {
   height: 600px;
