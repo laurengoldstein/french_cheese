@@ -29,9 +29,8 @@ function HomeView(props) {
           </li>
         </ul>
       </div>
-      <div className="row">
-        <Map />
-      </div>
+
+      <Map />
 
       <div className="row">
         <h4>Login or register to unlock all of Terroir's features.</h4>
