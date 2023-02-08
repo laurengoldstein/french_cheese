@@ -32,7 +32,7 @@ function CheeseSearchView(props) {
       <div className="row">
         <h1>Find your new favorite french cheeses!</h1>
       </div>
-      <div className="row pt-3 bg-light">
+      <div className="row pt-4 bg-light">
         <h3>
           Search by département, city and/or milk type to uncover all that
           France's creameries have to offer.
@@ -73,7 +73,7 @@ function CheeseSearchView(props) {
             </div>
           </div>
 
-          <div className="row pb-2 justify-content-center">
+          <div className="row pb-0 justify-content-center">
             <button type="submit" className="btn btn-outline">
               Search
             </button>
