@@ -25,11 +25,7 @@ function NavBar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item pt-0">
-              <NavLink
-                className="nav-link active"
-                aria-current="page"
-                to="/cheeses"
-              >
+              <NavLink className="nav-link" to="/cheeses">
                 Cheeses
               </NavLink>
             </li>
