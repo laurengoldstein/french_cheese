@@ -36,9 +36,9 @@ function CheeseSearchView(props) {
           France's creameries have to offer.
         </h2>
       </div>
-      <div className="row">
+      <div className="container">
         <form
-          className="row gy-2 gx-3 align-items-center"
+          className="row gy-2 gx-4 align-items-end justify-content-center"
           onSubmit={handleSubmit}
         >
           <div className="col-auto">
