@@ -24,14 +24,14 @@ function RegistrationForm(props) {
 
   function handleRegistrationSubmit(event) {
     event.preventDefault();
-    props.registerAccountCb(registrationInput);
+    // props.registerAccountCb(registrationInput);
   }
 
   return (
     <div className="RegistrationForm">
       <h1>New to Terroir?</h1>
       <h2>Register to access the cheesy goodness.</h2>
-      <form>
+      <form onSubmit={handleRegistrationSubmit}>
         <div className="mb-3">
           <label htmlFor="inputEmail" className="form-label">
             Email address
@@ -44,6 +44,9 @@ function RegistrationForm(props) {
             className="form-control"
             id="inputEmailRegister"
             aria-describedby="emailHelp"
+            name="email"
+            value={registrationInput.email}
+            onChange={handleRegistrationChange}
           />
         </div>
         <div className="mb-3">
@@ -54,6 +57,9 @@ function RegistrationForm(props) {
             type="text"
             className="form-control"
             id="inputUsernameRegister"
+            name="username"
+            value={registrationInput.username}
+            onChange={handleRegistrationChange}
           />
         </div>
         <div className="mb-3">
@@ -64,6 +70,9 @@ function RegistrationForm(props) {
             type="password"
             className="form-control"
             id="inputPasswordRegister"
+            name="password"
+            value={registrationInput.password}
+            onChange={handleRegistrationChange}
           />
         </div>
 

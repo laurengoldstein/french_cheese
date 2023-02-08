@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Map from "../components/Map";
 // import "./CheeseSearch.css";
 
-function CheeseSearchView(props) {
+function AllCheesesView(props) {
   const EMPTY_CHEESE_SEARCH_FORM = {
     location: "",
     milkType: "any",
@@ -28,7 +28,7 @@ function CheeseSearchView(props) {
   }
 
   return (
-    <div className="CheeseSearchView">
+    <div className="AllCheesesView">
       <div className="row">
         <h1>Find your new favorite french cheeses!</h1>
       </div>
@@ -86,4 +86,4 @@ function CheeseSearchView(props) {
   );
 }
 
-export default CheeseSearchView;
+export default AllCheesesView;
