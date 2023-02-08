@@ -31,49 +31,49 @@ function CheeseSearchView(props) {
     <div className="CheeseSearchView">
       <div className="row">
         <h1>Find your new favorite french cheeses!</h1>
-        <h2>
+      </div>
+      <div className="row pt-3 bg-light">
+        <h3>
           Search by département, city and/or milk type to uncover all that
           France's creameries have to offer.
-        </h2>
-      </div>
-      <div className="container">
-        <form
-          className="row gy-2 gx-4 align-items-end justify-content-center"
-          onSubmit={handleSubmit}
-        >
-          <div className="col-auto">
-            <label className="form-label" htmlFor="title">
-              Département or City
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="input-location"
-              name="location"
-              placeholder="Savoie"
-              value={cheeseSearchData.location}
-              onChange={(e) => handleCheeseSearchChange(e)}
-            />
+        </h3>
+        <form className="row gy-2 gx-4" onSubmit={handleSubmit}>
+          <div className="row justify-content-center">
+            <div className="col-4">
+              <label className="form-label" htmlFor="title">
+                Département or City
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="input-location"
+                name="location"
+                placeholder="Savoie"
+                value={cheeseSearchData.location}
+                onChange={(e) => handleCheeseSearchChange(e)}
+              />
+            </div>
+
+            <div className="col-2 dropdown">
+              <label className="form-label" htmlFor="title">
+                Milk Type
+              </label>
+              <select
+                className="form-select"
+                name="milkType"
+                onChange={handleCheeseSearchChange}
+                value={cheeseSearchData.milkType}
+              >
+                <option value="any">Any Type</option>
+                <option value="cow">Cow</option>
+                <option value="goat">Goat</option>
+                <option value="sheep">Sheep</option>
+                <option value="mixed">Mixed</option>
+              </select>
+            </div>
           </div>
 
-          <div className="col-auto dropdown">
-            <label className="form-label" htmlFor="title">
-              Milk Type
-            </label>
-            <select
-              className="form-select"
-              name="milkType"
-              onChange={handleCheeseSearchChange}
-              value={cheeseSearchData.milkType}
-            >
-              <option value="any">Any Type</option>
-              <option value="cow">Cow</option>
-              <option value="goat">Goat</option>
-              <option value="sheep">Sheep</option>
-              <option value="mixed">Mixed</option>
-            </select>
-          </div>
-          <div className="col-auto">
+          <div className="row pb-2 justify-content-center">
             <button type="submit" className="btn btn-outline">
               Search
             </button>
